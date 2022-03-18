@@ -1,6 +1,6 @@
 
-Problem 1 :   Given an array of integers, find the first missing positive integer in linear time and constant space. 
-	 	In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+Problem 1 :   Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest 
+	      positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
 
 Solution:
 	class Solution {
@@ -39,8 +39,8 @@ Solution:
 }
 
 
-Problem 2 :  Given an array of integers,return a new array such that each element at index i of the new array is the product of all the numbers 
-		in the original array except the one at i. Note: without using division operator
+Problem 2 :  Given an array of integers,return a new array such that each element at index i of the new array is the product of all the numbers in the 
+             original array except the one at i. Note: without using division operator
 
 Solution:
 	class Solution {
