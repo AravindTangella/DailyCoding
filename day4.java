@@ -10,39 +10,41 @@ Problem 1: cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the
 Solution :
 	class Pair<U, V> {
 
-		private U x;
-		private V y;
-		
+		 U x;
+		 V y;
+
 		Pair(U x, V y) {
 			this.x = x;
 			this.y = y;
-		}
-		
-		//This method returns the first element of passed in pair object
+		}	
+	}
+	
+	class RetrievePair<U, V> {
+
 		U car(Pair<U, V> p) {
 			return p.x;
 		}
-		
-		//This method returns the second element of passed in pair object
+
 		V cdr(Pair<U, V> p) {
 			return p.y;
 		}
-		
 	}
 	
 	class PairDemo{
 		public static void main(String[] args) {
-			
+
 			//Instantiating the object pair1
-			Pair<Integer, Double> pair1 = new Pair<Integer,Double>(2,3.456);
-			
+			Pair<Object, Object> pair1 = new Pair<Object, Object>(2,3.456);
+
 			//Instantiating the object pair2
-			Pair<Integer, Double> pair2 = new Pair<Integer, Double>
-									(3162983, 56787.82398);
-			
+			Pair<Object, Object> pair2 = new Pair<Object, Object>("3983", 56787.82398);
+
+			//Instantiating the object RetrievePair class object
+			RetrievePair<Object, Object> data = new RetrievePair<Object, Object>();
+
 			System.out.println("The first element of pair2 is "+data.car(pair2));
-			System.out.println("The second element of pair2 is "+pair2.cdr(pair2));
-			
+			System.out.println("The second element of pair2 is "+data.cdr(pair2));
+
 		}
 	}
 	
