@@ -3,7 +3,9 @@ Problem: 	A builder is looking to build a row of N houses that can be of K diffe
 		Given an N by K matrix where the nth row and kth column represents the cost to build 
 		the nth house with kth color, return the minimum cost which achieves this goal.
 		
-Solution:	public class MinCost {
+Solution:	MinCost.java
+
+		public class MinCost {
 
 		    int finMinCost(int[][] arr, int N, int K) {
 			int dp[][] = new int[N][K];
@@ -59,5 +61,25 @@ Solution:	public class MinCost {
 		    }
 		}
 
+		MinCostTest.java
+		
+		import org.junit.jupiter.api.Test;
+
+		import static org.junit.jupiter.api.Assertions.*;
+		public class MinCostTest {
+
+			@Test
+			public void testfindMinCost() {
+			    MinCost mc = new MinCost();
+			    int arr1[][] = {{14, 2, 11}, {11, 14, 5}, {14, 3, 10}};
+			    int arr2[][] = {{1,2, 3}, {1, 4, 6}};
+			    int arr3[][] = {{14, 10, 13, 11}, {2, 8, 11, 12}, {15, 20, 21, 1}, {3, 8, 7, 6}, {1, 2, 5, 9}};
+			    assertAll(
+				    () -> assertEquals(10, mc.findMinCost(arr1, 3, 3)),
+				    () -> assertEquals(3, mc.findMinCost(arr2, 2, 3)),
+				    () -> assertEquals(18, mc.findMinCost(arr3, 5, 4))
+			    );
+			}
+		}
 
 
