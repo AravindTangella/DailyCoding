@@ -16,7 +16,7 @@ Solution : class Solution {
                   fillKeypad(keypad);
 
                   findCombinations(digits, keypad, "", 0, digits.length(), combinations);
-                  System.out.println(combinations.size());
+                  
                   return combinations;
               }
 
