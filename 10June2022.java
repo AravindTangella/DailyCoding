@@ -17,7 +17,7 @@ Solution :
                     int b = sc.nextInt();
 
                     System.out.print("Result : ");
-                    if((b&1) == 1)
+                    if((b&1) == 1) //Checking if the 0th bit is 1 or 0, if it is 1 then it returns x else y.
                         System.out.println(x);
                     else
                         System.out.println(y);
